@@ -10,8 +10,6 @@ valorSaque = Convert.ToDecimal(Console.ReadLine());
 
 Console.ResetColor();
 
-Console.ForegroundColor = ConsoleColor.Red;
-
 if (valorSaque <= 0)
 {
     Console.WriteLine("\nNão é possível realizar o saque.");
@@ -23,8 +21,6 @@ if (valorSaque % 1 > 0)
     Console.WriteLine("\nEste caixa não trabalha com moedas.");
     return;
 }
-
-Console.ResetColor();
 
 valorRestante = valorSaque;
 
