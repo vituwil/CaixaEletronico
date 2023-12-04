@@ -5,17 +5,20 @@ Console.ForegroundColor = ConsoleColor.Blue;
 
 Console.WriteLine("--- Caixa Eletrônico ---\n");
 
+//Digita o valor que deseja sacar//
 Console.Write("Digite o valor a ser sacado...: ");
 valorSaque = Convert.ToDecimal(Console.ReadLine());
 
 Console.ResetColor();
 
+//Se o valor for igual ou menor que 0 aparece a seguinte mensagem//
 if (valorSaque <= 0)
 {
     Console.WriteLine("\nNão é possível realizar o saque.");
     return;
 }
 
+//Se o valor for menor que 1 (moedas), aparece a seguinte mensagem//
 if (valorSaque % 1 > 0)
 {
     Console.WriteLine("\nEste caixa não trabalha com moedas.");
@@ -50,6 +53,7 @@ valorRestante = valorRestante % 1;
 
 Console.ForegroundColor = ConsoleColor.Blue;
 
+//Aparece o valor e a quantidade de notas que o caixa de entregar//
 Console.WriteLine("\nO caixa deve entregar:");
 
 Console.ResetColor();
